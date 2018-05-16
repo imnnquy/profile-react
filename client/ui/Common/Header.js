@@ -1,5 +1,4 @@
 import React from 'react';
-import myLogo from '../../images/mylogo.png';
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -17,7 +16,7 @@ export default class Header extends React.Component {
                     <span className="icon-bar"></span>
                 </button>
                 <a className="navbar-brand" href="#page-top">
-                    <img className="img-responsive" src={myLogo} alt="Home" title="Home"/>
+                    <img className="img-responsive" src="images/mylogo.png" alt="Home" title="Home"/>
                 </a>
             </div>
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

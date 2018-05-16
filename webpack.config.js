@@ -8,6 +8,16 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   filename: 'index.html',
   inject: 'body'
 })
+
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPluginConfig = new CopyWebpackPlugin([
+    {
+      from: 'client/images/',
+      to: 'images/',
+      force: true
+    }]
+)
+
 module.exports = {
   entry: './client/index.js',
   output: {
@@ -52,5 +62,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [HtmlWebpackPluginConfig]
+  plugins: [HtmlWebpackPluginConfig, CopyWebpackPluginConfig]
 }
