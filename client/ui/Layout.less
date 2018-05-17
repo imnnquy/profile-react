@@ -1,17 +1,16 @@
-@color_1: #0088c3;
-@color_2: #fff;
-@color_3: #2c3e50;
-@color_4: #18bc9c;
-@color_5: #ffffff;
-@font_family_1: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font_family_2: FontAwesome;
-@background_color_1: #0088c3;
-@background_color_2: #fff;
-@background_color_3: #2c3e50;
-@background_color_4: #233140;
-@background_color_5: transparent;
-@border_color_1: #fff;
-@border_color_2: #2c3e50;
+@main_theme_color: #0088c3;
+@light_color: #fff;
+@dark_color: #2c3e50;
+@sub_main_color: #18bc9c;
+@main_font: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font_awesome: FontAwesome;
+@main_theme_background: #0088c3;
+@light_background: #fff;
+@dark_background: #2c3e50;
+@darker_background: #233140;
+@transparent_background: transparent;
+@light_border: #fff;
+@dark_border: #2c3e50;
 
 body {
 	overflow-x: hidden;
@@ -24,52 +23,52 @@ p.small {
 }
 a {
 	outline: 0;
-	color: @color_1;
+	color: @main_theme_color;
 	&:hover {
 		outline: 0;
-		color: @color_1;
+		color: @main_theme_color;
 	}
 	&:focus {
 		outline: 0;
-		color: @color_1;
+		color: @main_theme_color;
 	}
 	&:active {
 		outline: 0;
-		color: @color_1;
+		color: @main_theme_color;
 	}
 }
 a.active {
 	outline: 0;
-	color: @color_1;
+	color: @main_theme_color;
 }
 h1 {
 	text-transform: uppercase;
-	font-family: @font_family_1;
+	font-family: @main_font;
 	font-weight: 700;
 }
 h2 {
 	text-transform: uppercase;
-	font-family: @font_family_1;
+	font-family: @main_font;
 	font-weight: 700;
 }
 h3 {
 	text-transform: uppercase;
-	font-family: @font_family_1;
+	font-family: @main_font;
 	font-weight: 700;
 }
 h4 {
 	text-transform: uppercase;
-	font-family: @font_family_1;
+	font-family: @main_font;
 	font-weight: 700;
 }
 h5 {
 	text-transform: uppercase;
-	font-family: @font_family_1;
+	font-family: @main_font;
 	font-weight: 700;
 }
 h6 {
 	text-transform: uppercase;
-	font-family: @font_family_1;
+	font-family: @main_font;
 	font-weight: 700;
 }
 hr.star-light {
@@ -79,17 +78,17 @@ hr.star-light {
 	border: 0;
 	border-top: solid 5px;
 	text-align: center;
-	border-color: @border_color_1;
+	border-color: @light_border;
 	&:after {
 		content: "\f005";
 		display: inline-block;
 		position: relative;
 		top: -.8em;
 		padding: 0 .25em;
-		font-family: @font_family_2;
+		font-family: @font_awesome;
 		font-size: 2em;
-		color: @color_2;
-		background-color: @background_color_1;
+		color: @light_color;
+		background-color: @main_theme_background;
 	}
 }
 hr.star-primary {
@@ -99,17 +98,17 @@ hr.star-primary {
 	border: 0;
 	border-top: solid 5px;
 	text-align: center;
-	border-color: @border_color_2;
+	border-color: @dark_border;
 	&:after {
 		content: "\f005";
 		display: inline-block;
 		position: relative;
 		top: -.8em;
 		padding: 0 .25em;
-		font-family: @font_family_2;
+		font-family: @font_awesome;
 		font-size: 2em;
-		color: @color_3;
-		background-color: @background_color_2;
+		color: @dark_color;
+		background-color: @light_background;
 	}
 }
 .img-centered {
@@ -117,7 +116,7 @@ hr.star-primary {
 }
 header {
 	text-align: center;
-	color: @color_2;
+	color: @light_color;
 	background: #0088c3;
 	.container {
 		padding-top: 100px;
@@ -131,7 +130,7 @@ header {
 		.name {
 			display: block;
 			text-transform: uppercase;
-			font-family: @font_family_1;
+			font-family: @main_font;
 			font-size: 2em;
 			font-weight: 700;
 		}
@@ -143,7 +142,7 @@ header {
 }
 .navbar {
 	text-transform: uppercase;
-	font-family: @font_family_1;
+	font-family: @main_font;
 	font-weight: 700;
 	a {
 		&:focus {
@@ -163,18 +162,18 @@ header {
 }
 .navbar-default {
 	border: 0;
-	background-color: @background_color_3;
+	background-color: @dark_background;
 	.navbar-nav {
 		>li {
 			>a {
-				color: @color_5;
+				color: @light_color;
 				&:hover {
-					color: @color_4;
-					background-color: @background_color_5;
+					color: @sub_main_color;
+					background-color: @transparent_background;
 				}
 				&:focus {
-					color: @color_4;
-					background-color: @background_color_5;
+					color: @sub_main_color;
+					background-color: @transparent_background;
 				}
 			}
 		}
@@ -182,7 +181,7 @@ header {
 }
 .navbar-inverse {
 	border: 0;
-	background-color: @background_color_3;
+	background-color: @dark_background;
 }
 section {
 	padding: 100px 0;
@@ -192,27 +191,27 @@ section {
 	}
 }
 section.success {
-	color: @color_2;
+	color: @light_color;
 	background: #0088c3;
 	a {
 		outline: 0;
-		color: @color_3;
+		color: @dark_color;
 		&:hover {
 			outline: 0;
-			color: @color_3;
+			color: @dark_color;
 		}
 		&:focus {
 			outline: 0;
-			color: @color_3;
+			color: @dark_color;
 		}
 		&:active {
 			outline: 0;
-			color: @color_3;
+			color: @dark_color;
 		}
 	}
 	a.active {
 		outline: 0;
-		color: @color_3;
+		color: @dark_color;
 	}
 }
 #portfolio {
@@ -244,7 +243,7 @@ section.success {
 					margin-top: -12px;
 					text-align: center;
 					font-size: 20px;
-					color: @color_2;
+					color: @light_color;
 					i {
 						margin-top: -12px;
 					}
@@ -266,28 +265,28 @@ section.success {
 	margin-top: 15px;
 	border: solid 2px #fff;
 	font-size: 20px;
-	color: @color_2;
+	color: @light_color;
 	background: 0 0;
 	transition: all .3s ease-in-out;
 	&:hover {
 		border: solid 2px #fff;
-		color: @color_1;
+		color: @main_theme_color;
 		background: #fff;
 	}
 	&:focus {
 		border: solid 2px #fff;
-		color: @color_1;
+		color: @main_theme_color;
 		background: #fff;
 	}
 	&:active {
 		border: solid 2px #fff;
-		color: @color_1;
+		color: @main_theme_color;
 		background: #fff;
 	}
 }
 .btn-outline.active {
 	border: solid 2px #fff;
-	color: @color_1;
+	color: @main_theme_color;
 	background: #fff;
 }
 .floating-label-form-group {
@@ -348,7 +347,7 @@ section.success {
 }
 .floating-label-form-group-with-focus {
 	label {
-		color: @color_4;
+		color: @sub_main_color;
 	}
 }
 form {
@@ -361,20 +360,20 @@ form {
 	}
 }
 footer {
-	color: @color_2;
+	color: @light_color;
 	h3 {
 		margin-bottom: 30px;
 	}
 	.footer-above {
 		padding-top: 50px;
-		background-color: @background_color_3;
+		background-color: @dark_background;
 	}
 	.footer-col {
 		margin-bottom: 50px;
 	}
 	.footer-below {
 		padding: 25px 0;
-		background-color: @background_color_4;
+		background-color: @darker_background;
 	}
 }
 .btn-social {
@@ -443,7 +442,7 @@ footer {
 		right: 25px;
 		width: 75px;
 		height: 75px;
-		background-color: @background_color_5;
+		background-color: @transparent_background;
 		cursor: pointer;
 		&:hover {
 			opacity: .3;
@@ -453,7 +452,7 @@ footer {
 			width: 1px;
 			height: 75px;
 			margin-left: 35px;
-			background-color: @background_color_3;
+			background-color: @dark_background;
 			-webkit-transform: rotate(45deg);
 			-ms-transform: rotate(45deg);
 			transform: rotate(45deg);
@@ -461,7 +460,7 @@ footer {
 				z-index: 1052;
 				width: 1px;
 				height: 75px;
-				background-color: @background_color_3;
+				background-color: @dark_background;
 				-webkit-transform: rotate(90deg);
 				-ms-transform: rotate(90deg);
 				transform: rotate(90deg);
